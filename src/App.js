@@ -1,9 +1,8 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { LevelsProviders } from "./hooks/useLevels";
 import { Drawer } from "./components/Drawer";
-import { HStack, Flex, Text, IconButton } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Sidebar from "./components/Sidebar,";
-import { FiMenu } from "react-icons/fi";
 
 function App() {
   return (
