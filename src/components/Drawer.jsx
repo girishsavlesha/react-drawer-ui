@@ -18,6 +18,7 @@ export const Drawer = () => {
             right="0"
             bottom="0"
             background="#fff"
+            minH="100vh"
             style={{
               zIndex: level.depth || undefined,
               left: level.depth && (700 / levels.length) * level.depth,
