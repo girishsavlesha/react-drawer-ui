@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { Box, Heading, Text, Stack, Button, VStack } from "@chakra-ui/react";
 import { UseLevelsContext } from "./../hooks/useLevels";
 
-export const ContentBox = () => {
-  const { levels, addLevel, closeLevel } = useContext(UseLevelsContext);
+export const ContentBox = ({ level }) => {
+  const { addLevel, closeLevel } = useContext(UseLevelsContext);
   return (
     <Box p={40} fontSize={20} justifyContent="start">
       <VStack spacing={10} alignItems="start">
@@ -17,7 +17,7 @@ export const ContentBox = () => {
             <Button colorScheme="teal" variant="solid" onClick={addLevel}>
               Add
             </Button>
-            {levels.length > 1 && (
+            {level.depth > 0 && (
               <Button colorScheme="teal" variant="outline" onClick={closeLevel}>
                 Close
               </Button>

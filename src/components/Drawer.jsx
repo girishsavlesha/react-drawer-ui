@@ -24,7 +24,7 @@ export const Drawer = () => {
               boxShadow: level.depth ? "0 0 20px 0 rgba(0,0,0,0.2)" : "none",
             }}
           >
-            <ContentBox />
+            <ContentBox level={level} />
             {level.depth !== levels.length - 1 ? (
               <Box
                 position="absolute"
